@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Felicity 2013 | Sponsors |||||</title>
+
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+	//Speed of the slideshow
+	var speed = 3000;
+	
+	//You have to specify width and height in #slider CSS properties
+	//After that, the following script will set the width and height accordingly
+	$('#mask-gallery, #gallery li').width($('#slider').width());	
+	$('#gallery').width($('#slider').width() * $('#gallery li').length);
+	$('#mask-gallery, #gallery li, #mask-excerpt, #excerpt li').height($('#slider').height());
+	
+	//Assign a timer, so it will run periodically
+	var run = setInterval('newsscoller(0)', speed);	
+	
+	$('#gallery li:first, #excerpt li:first').addClass('selected');
+
+	
+	//Mouse over, pause it, on mouse out, resume the slider show
+	$('#slider').hover(
+	
+		function() {
+			clearInterval(run);
+		}, 
+		function() {
+			run = setInterval('newsscoller(0)', speed);	
+		}
+	); 	
+	
+});
+
+
+function newsscoller(prev) {
+
+	//Get the current selected item (with selected class), if none was found, get the first item
+	var current_image = $('#gallery li.selected').length ? $('#gallery li.selected') : $('#gallery li:first');
+	var current_excerpt = $('#excerpt li.selected').length ? $('#excerpt li.selected') : $('#excerpt li:first');
+
+	//if prev is set to 1 (previous item)
+	if (prev) {
+		
+		//Get previous sibling
+		var next_image = (current_image.prev().length) ? current_image.prev() : $('#gallery li:last');
+		var next_excerpt = (current_excerpt.prev().length) ? current_excerpt.prev() : $('#excerpt li:last');
+	
+	//if prev is set to 0 (next item)
+	} else {
+		
+		//Get next sibling
+		var next_image = (current_image.next().length) ? current_image.next() : $('#gallery li:first');
+		var next_excerpt = (current_excerpt.next().length) ? current_excerpt.next() : $('#excerpt li:first');
+	}
+
+	//clear the selected class
+	$('#excerpt li, #gallery li').removeClass('selected');
+	
+	//reassign the selected class to current items
+	next_image.addClass('selected');
+	next_excerpt.addClass('selected');
+
+	//Scroll the items
+	$('#mask-gallery').scrollTo(next_image, 800);		
+	$('#mask-excerpt').scrollTo(next_excerpt, 800);					
+	
+}
+
+
+
+</script>
+
+<style>
+
+#slider {
+
+	/* You MUST specify the width and height */
+	width:300px;
+	height:186px;
+	position:relative;	
+	overflow:hidden;
+}
+
+#mask-gallery {
+	
+	overflow:hidden;	
+}
+
+#gallery {
+	
+	/* Clear the list style */
+	list-style:none;
+	margin:0;
+	padding:0;
+	
+	z-index:0;
+	
+	/* width = total items multiply with #mask gallery width */
+	width:900px;
+	overflow:hidden;
+}
+
+	#gallery li {
+
+		
+		/* float left, so that the items are arrangged horizontally */
+		float:left;
+	}
+
+
+#mask-excerpt {
+	
+	/* Set the position */
+	position:absolute;	
+	top:0;
+	left:0;
+	z-index:500;
+	
+	/* width should be lesser than #slider width */
+	width:100px;
+	overflow:hidden;	
+	
+
+}
+	
+#excerpt {
+	/* Opacity setting for different browsers */
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;  
+	-khtml-opacity: 0.6;
+	opacity: 0.6;  
+	
+	/* Clear the list style */
+	list-style:none;
+	margin:0;
+	padding:0;
+	
+	/* Set the position */
+	z-index:10;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	/* Set the style */
+	width:100px;
+	background-color:#000;
+	overflow:hidden;
+	font-family:arial;
+	font-size:10px;
+	color:#fff;	
+}
+
+	#excerpt li {
+		padding:5px;
+	}
+	
+
+
+.clear {
+	clear:both;	
+}
+
+
+</style>
+</head>
+
+<body style="background-color:white" >
+<div id="debug"></div>
+
+<div id="slider">
+
+	<div id="mask-gallery">
+<center>
+	<ul id="gallery">
+Array<li><img src='images/a_ms.jpg' width='210' height='130' alt='a_ms.jpg' /></li><li><img src='images/b_qualcomm.jpg' width='210' height='130' alt='b_qualcomm.jpg' /></li><li><img src='images/c_sbh.jpg' width='210' height='130' alt='c_sbh.jpg' /></li><li><img src='images/d_ivrcl.jpg' width='210' height='130' alt='d_ivrcl.jpg' /></li><li><img src='images/e_active.jpg' width='210' height='130' alt='e_active.jpg' /></li><li><img src='images/f_progress.jpg' width='210' height='130' alt='f_progress.jpg' /></li><li><img src='images/g_capitaliq.jpg' width='210' height='130' alt='g_capitaliq.jpg' /></li><li><img src='images/h_ibm.jpg' width='210' height='130' alt='h_ibm.jpg' /></li><li><img src='images/i_aditya.jpg' width='210' height='130' alt='i_aditya.jpg' /></li><li><img src='images/j_quicksilver.jpg' width='210' height='130' alt='j_quicksilver.jpg' /></li><li><img src='images/k_countryoven.jpg' width='210' height='130' alt='k_countryoven.jpg' /></li><li><img src='images/l_hazzel.jpg' width='210' height='130' alt='l_hazzel.jpg' /></li><li><img src='images/m_mad.jpg' width='210' height='130' alt='m_mad.jpg' /></li><li><img src='images/n_freecharge.jpg' width='210' height='130' alt='n_freecharge.jpg' /></li><li><img src='images/p_ennadu.jpg' width='210' height='130' alt='p_ennadu.jpg' /></li><li><img src='images/q_ETV.jpg' width='210' height='130' alt='q_ETV.jpg' /></li><li><img src='images/r_estyle.jpg' width='210' height='130' alt='r_estyle.jpg' /></li><li><img src='images/s_jam.jpg' width='210' height='130' alt='s_jam.jpg' /></li><li><img src='images/t_tagmuse.jpg' width='210' height='130' alt='t_tagmuse.jpg' /></li><li><img src='images/u_ghac.jpg' width='210' height='130' alt='u_ghac.jpg' /></li><li><img src='images/v_servo.jpg' width='210' height='130' alt='v_servo.jpg' /></li><li><img src='images/w_ab.jpg' width='210' height='130' alt='w_ab.jpg' /></li><!--
+<li style="width: 300px; height: 186px;" class="">
+	<img src="images/1_ms.jpg" width="210" height="130" alt="3_sbh.jpg">
+</li>
+<li style="width: 300px; height: 186px;" class="">
+	<img src="images/2_qualcomm.jpg" width="210" height="130" alt="2_qualcomm.jpg">
+</li>
+<li style="width: 300px; height: 186px;" class="">
+	<img src="images/3_sbh.jpg" width="210" height="130" alt="3_sbh.jpg">
+</li>
+<li style="width: 300px; height: 186px;" class="">
+	<img src="images/4_ivrcl.jpg" width="210" height="130" alt="4_ivrcl.jpg">
+</li>
+<li style="width: 300px; height: 186px;" class="">
+	<img src="images/6_progress.jpg" width="210" height="130" alt="6_progress.jpg">
+</li>
+<li style="width: 300px; height: 186px;" class="">
+	<img src="images/7_capitaliq.jpg" width="210" height="130" alt="7_capitaliq.jpg">
+</li>
+<li style="width: 300px; height: 186px;" class="">
+	<img src="images/8_aditya.jpg" width="210" height="130" alt="8_aditya.jpg">
+</li>
+<li style="width: 300px; height: 186px;" class="">
+	<img src="images/9_quicksilver.jpg" width="210" height="130" alt="9_quicksilver.jpg">
+</li>
+<li style="width: 300px; height: 186px;" class="">
+	<img src="images/9a_mad.png" width="210" height="130" alt="9a_mad.png">
+</li>
+<li style="width: 300px; height: 186px;" class="selected">
+	<img src="images/9b_estyle.jpg" width="210" height="130" alt="9b_estyle.jpg">
+</li>
+<li style="width: 300px; height: 186px;" class="selected">
+	<img src="images/hazzel.jpg" width="210" height="130" alt="hazzel.jpg">
+</li>
+
+-->
+
+
+<!--
+
+		<li><img src="images/ms.png" width="300" height="186" alt=""/></li>
+		<li><img src="images/pier2.jpg" width="300" height="186" alt=""/></li>
+		<li><img src="images/pier3.jpg" width="300" height="186" alt=""/></li>
+-->
+	</ul>
+</center>
+	</div>
+	<!--
+	<div id="mask-excerpt">
+	<ul id="excerpt">
+		<li>Cras dictum. Maecenas ut turpis. In vitae erat ac orci dignissim eleifend.</li>
+		<li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
+		<li>Nunc quis justo. Sed vel ipsum in purus tincidunt pharetra.</li>
+	</ul>
+	</div>-->
+
+</div>
+
+
+<div class="clear"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,1415 @@
+<!DOCTYPE HTML>
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" >
+ <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" >
+  <meta property="og:url"    content="http://felicity.iiit.ac.in/13/main/index.php" />
+  <meta property="og:image"  content="http://felicity.iiit.ac.in/13/main/images/felicity_Logo.png" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <style type='text/css'>
+#SPONSORS li u h3 {
+font-family:"'Trebuchet MS', arial, sans-serif;"
+}
+#SPONSORS img {
+padding:5px;
+}
+</style>
+
+<title> Felicity 2k13  </title>
+<link rel="stylesheet" type="text/css" href="style/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="style/fb_style.css" media="all" />
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/get_answer_GHJGDJHGJDHG.js"></script>
+<script>
+//alert("This is a secretive development. DONOT share the link until a formal website release");
+</script>
+
+<script>
+    $(document).ready(function(){
+
+                $("#loader").hide(100);
+
+		$(".item").hide();
+                $("div#Logo").css("padding-top","80px");
+                $("div#Logo img").css("width","400px");
+var question_asked = 0;
+
+	$(".filter li").click(function(){
+            if($(this).attr("id") == "all"){
+            $("div#Logo").css("padding-top","80px");
+            $("div#Logo img").css("width","400px");
+            }
+            else{
+                $("div#Logo").css("padding-top","0px");
+                $("div#Logo img").css("width","250px");
+            }
+		$(".item").show();
+
+        });
+
+        if(question_asked == 1){
+            get_answer();
+        }
+
+
+
+        $(".infoHeader").hover(function(){
+           var bg = $(this).css("background-image");
+	   bg = bg.replace("images_bw/","images/");
+           $(this).css("background-image",bg);
+        }, function(){
+
+           var bg = $(this).css("background-image");
+	   bg = bg.replace("images/","images_bw/");
+           $(this).css("background-image",bg);
+
+});
+
+});
+
+</script>
+</head>
+<body class="BGribbons">
+<div id="loader" style="height:100%;width:100%;background-color:black; position:fixed;z-index:100;align-content:center;"><img alt="felicity_logo" src="images/felicity_Logo.png"/><br /><br /><img alt="loading" src="images/loalding.gif"/></div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=143418345817318";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+<div id="overlay"></div>
+<div id="lightbulb"></div>
+<div id="container" >
+
+
+	<div id="nav"  class="unit static twoWide threeHigh">
+
+
+<div>
+<iframe style="position:absolute;z-index:10; top:0;left:60px;border-radius:20px;" src='../Misc/sponsors/index.html' height='146' width='272' scrolling='no'></iframe>
+</div>
+
+		<ul class="filter">
+			<li class="selected" id="all" ><a  href="index.html#" data-filter="BADABING"><span>Home</span></a></li>
+			<li id="info"><a href="index.html#"  data-filter=".events"><span>Events</span></a></li>
+			<li id="photography"><a href="index.html#"  data-filter=".about"><span>About</span></a></li>
+			<li id="illustration"><a href="index.html#"  data-filter=".illustration"><span>Schedule</span></a></li>
+			<li id="video"><a href="index.html#"  data-filter=".nights"><span>Nights</span></a></li>
+			<li id="SPM" style="background-color:#558e2f"><a href="index.html#" data-filter=".sponsors"><span>Sponsors</span></a></li>
+		</ul>
+
+	</div>
+	<div class="unit static threeWide" id="social">
+		<ul class="social">
+			<li id="facebook"><a href="https://www.facebook.com/felicity.iiith" target="_blank"></a></li>
+			<li id="twitter"><a href="https://twitter.com/felicity_iiith" target="_blank"></a></li>
+		</ul>
+	</div>
+
+
+<!-- Felicty header -->
+        <div class="unit static threeWide" id="Logo" style="height: 120px">
+
+
+
+
+ <div>
+    <marquee  id="marqueedisp" scrollamount="3" onmouseout="this.scrollAmount=3" onmouseover="this.scrollAmount=0" direction="left" class="list_marquee" >
+    Felicity Regrets Hyderabad Bomb Blasts, Fest continues.
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    Paper presentation event has started. <a href="http://feli.co/paper-ppt">feli.co/paper-ppt </a>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    Search Engine Optimization has started. <a href="http://feli.co/seo">feli.co/seo</a>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    Riders-of-the-storm (Battle of bands) registrations have opened <a href="http://feli.co/riders">feli.co/riders/</a>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    Futsal registration has started <a href="http://feli.co/futsal">feli.co/futsal</a>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    Stomp the yard (Dance Competition) event registration started <a href="http://feli.co/stomp">feli.co/stomp</a>
+
+
+     </marquee>
+</div>
+
+                <div class="content" >
+                        <div class="column-three last">
+                        <!--<center><img style="height:80px;width:300px" src="images/Logo1.png"/> </center> -->
+                        <img alt="felicity_logo" src="images/felicity_Logo.png" style="align-content: center;"/>
+       <br />
+
+                     <br />
+
+                        </div>
+                </div>
+        </div>
+
+<!-- Felicity header end -->
+
+
+<!-- EVENTS START -->
+
+<!-- Individual Class defn start
+<div class="unit item oneWide oneHigh info events" id="events">
+<h4 class="infoHeader">Threads</h4>
+<div class="content cf">
+<div class="column-three last">
+<h1 class="center">Threads</h1>
+</div>
+</div>
+</div>
+-->
+<!-- Individual Class defn ends -->
+
+
+        <div class="unit item oneWide oneHigh events info" id="thread">
+        <h4 class="infoHeader" style="background-image:url('images_bw/threads_thumb.jpg');border-radius:90px;">Threads</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">Threads</h1>
+                </div>
+                        <div class="column">
+                <span id="threads_image"><img alt="threads" src="images/threads.jpg" /></span>
+                        </div>
+                        <div class="column-two last" >
+                                <h3 id="threads_header">Threads @ Felicity</h3>
+                                <p id="threads_tagline" class="tagline">For geeks and humans</p>
+                                <p class="bottomSection" id="threads_content">Threads at Felicity is a one stop place to exercise all your programming and puzzle solving skills to test. Sponsored by Microsoft, this is one of the largest events of it's kind in India with 66 participant countries. <br /> Schedule : <br />Optimust : 16th Feb 8:00pm <br />CodeCraft : 17th Feb 2:00pm <br /> Gordian Knot: 20th Feb 8:00pm <br /> Break-in 18th Feb 8:00pm </p>
+                        </div>
+                        <div class="column">
+                        <h4 class="center">Programing</h4>
+                        <p class="center">
+                                <span class="event_name" onclick="change_frame('threads','codecraft')"> Code Craft </span> <br />
+                                <span class="event_name" onclick="change_frame('threads','tle')"> TLE </span><br />
+                                <span class="event_name" onclick="change_frame('threads','aichallenge')"> AI Challenge</span><br />
+
+
+                        </p>
+                        </div>
+                        <div class="column">
+                        <h4 class="center">Puzzles</h4>
+                        <p class="center">
+
+                                <span class="event_name" onclick="change_frame('threads','cachein')"> Cache-In </span> <br />
+                                <span class="event_name" onclick="change_frame('threads','gordian')"> Gordian-knot </span><br />
+                                <span class="event_name" onclick="change_frame('threads','dbug')"> Dbug the Cbug </span><br />
+                        </p>
+                        </div>
+                        <div class="column last">
+                        <h4 class="center">Advanced</h4>
+                        <p class="center bottomSection">
+                                <span class="event_name" onclick="change_frame('threads','seo')"> SEO </span> <br />
+                                <span class="event_name" onclick="change_frame('threads','breakin')"> Break-in </span> <br />
+
+
+
+
+                        </p>
+                        </div>
+                </div>
+        </div>
+
+
+
+
+
+
+<!-- Pulsation -->
+
+        <div class="unit item oneWide oneHigh events info" id="thread1">
+        <h4 class="infoHeader" style="background-image:url('images_bw/pulsation_thumb.jpg');border-radius:90px;" >Pulsation</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">Pulsation</h1>
+                </div>
+                        <div class="column">
+                <span id="pulsation_image"><img alt="pulsation" src="images/pulsation.jpg" /></span>
+                        </div>
+                        <div class="column-two last" >
+                                <h3 id="pulsation_header">Pulsation @ Felicity</h3>
+                                <p id="pulsation_tagline" class="tagline">Where silicon meets wit</p>
+                                <p class="bottomSection" id="pulsation_content">
+                                Pulsation is the electronics power house of the festival. With 5 new events, Pulsation'13 promises to be one of the better electronics events around. It has various workshops and competitions to take potential scientists into it's grip. <br />Contact <br /> Rakesh Nr 9885950856<br />
+Rakesh reddy baddam 9866963104 <br />
+
+                                <br /><br/><br/></p>
+                        </div>
+                        <div class="column">
+                        <!--<h4 class="center">Workshop</h4>-->
+                        <p class="center">
+                                <!--span class="event_name" onclick="change_frame('pulsation','uc')"> µC Workshop </span> <br /-->
+                                <span class="event_name" onclick="change_frame('pulsation','rs')"> Robo Soccer </span> <br />
+                                <span class="event_name" onclick="change_frame('pulsation','eq')"> E-Quiz </span> <br />
+
+
+                        </p>
+                        </div>
+                        <div class="column">
+                        <p class="center">
+                                <span class="event_name" onclick="change_frame('pulsation','es')"> Embedded Showcase </span> <br />
+                                <span class="event_name" onclick="change_frame('pulsation','cdc')"> Code-da-Ckt </span> <br />
+                                <span class="event_name" onclick="change_frame('pulsation','me')"> Mystr-E </span> <br />
+                        </p>
+                        </div>
+                        <div class="column last">
+                        <p class="center bottomSection">
+                                <span class="event_name" onclick="change_frame('pulsation','kob')"> King Of Breadboards </span> <br />
+                                <span class="event_name" onclick="change_frame('pulsation','rrr')"> Robo Rally Race </span> <br />
+                                <span class="event_name" onclick="change_frame('pulsation','mc')"> Maze-Challenge </span> <br />
+
+
+
+
+                        </p>
+                        </div>
+                </div>
+        </div>
+
+<!-- Pulsation end -->
+<!-- Kalakshetra -->
+
+        <div class="unit item oneWide oneHigh events info" id="thread2">
+        <h4 class="infoHeader" style="background-image:url('images_bw/kala_thumb.jpg')">Kalakshetra</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">Kalakshetra</h1>
+                </div>
+                        <div class="column">
+                <span id="kalakshetra_image"><img alt="kala" src="images/kala.jpg" /></span>
+                        </div>
+                        <div class="column-two last" >
+                                <h3 id="kalakshetra_header">Kalakshetra</h3>
+                                <p id="kalakshetra_tagline" class="tagline">Paint and more</p>
+                                <p class="bottomSection" id="kalakshetra_content">
+
+
+
+
+For the artistically inclined, and those who paint the world in their own colors, Kalakshetra is the place to be. Dabbling in paints and paper and expressing your creativity in this popular set of events is an experience one does not miss in Felicity.
+
+
+                                <br /><br/><br/></p>
+                        </div>
+                        <div class="column">
+                        <!--<h4 class="center">Workshop</h4>-->
+                        <p class="center">
+                                <span class="event_name" onclick="change_frame('kalakshetra','facade')"> Facade </span> <br />
+                                <span class="event_name" onclick="change_frame('kalakshetra','graffiti')"> Graffiti </span> <br />
+
+
+                        </p>
+                        </div>
+                        <div class="column">
+                        <p class="center">
+                                <span class="event_name" onclick="change_frame('kalakshetra','pd')"> Paper Dressing </span> <br />
+                        </p>
+                        </div>
+                        <div class="column last">
+                        <p class="center bottomSection">
+                                <span class="event_name" onclick="change_frame('kalakshetra','rangoli')"> Rangoli </span> <br />
+
+
+
+
+                        </p>
+                        </div>
+                </div>
+        </div>
+
+
+<!-- Kalakshetra end -->
+
+<!-- Cultural -->
+
+        <div class="unit item oneWide oneHigh events info" id="thread3">
+        <h4 class="infoHeader oneHigh" style="background-image:url('images_bw/cult_thumb.jpg')">Cultural Colosseum</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">Cultural Colosseum</h1>
+                </div>
+                        <div class="column">
+                <span id="culturals_image"><img alt="inaugral" src="images/inaugral.jpg" /></span>
+                        </div>
+                        <div class="column-two last" >
+                                <h3 id="culturals_header">Cultural Colosseum</h3>
+                                <p id="culturals_tagline" class="tagline">Dance, Music</p>
+                                <p class="bottomSection" id="culturals_content">
+
+Music and dance are the backbone of any cultural event. Felicity’s draw lies in its immensely popular nights of song and dance, as well as the must-watch competitions are as follows.
+
+
+
+                                <br /><br/><br/></p>
+                        </div>
+                        <div class="column">
+                        <!--<h4 class="center">Workshop</h4>-->
+                        <p class="center">
+                                <span class="event_name" onclick="change_frame('culturals','rots')"> Riders of the storm </span> <br />
+                                <span class="event_name" onclick="change_frame('culturals','stomp')"> Stomp the yard </span> <br />
+
+
+                        </p>
+                        </div>
+                        <div class="column">
+                        <p class="center">
+                                <span class="event_name" onclick="change_frame('culturals','antakshari')"> Antakshari </span> <br />
+                        </p>
+                        </div>
+                        <div class="column last">
+                        <p class="center bottomSection">
+                                <span class="event_name" onclick="change_frame('culturals','euphonica')"> Euphonica </span> <br />
+
+
+
+
+                        </p>
+                        </div>
+                </div>
+        </div>
+
+<!-- cultural end -->
+
+        <div class="unit item oneWide oneHigh events info" id="thread4">
+        <h4 class="infoHeader" style="background-image:url('images_bw/zombie_thumb.jpg')">Gaming</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">ZombieZone</h1>
+                </div>
+                        <div class="column">
+                <span id="ZombieZone_image"><img alt="zombie" src="images/zombie.JPG" /></span>
+                        </div>
+                        <div class="column-two last" >
+                                <h3 id="ZombieZone_header">Zombie Zone</h3>
+                                <p id="ZombieZone_tagline" class="tagline">Gaming for life.</p>
+                                <p class="bottomSection" id="kalakshetra_content1">
+
+Do you regularly feel your adrenaline wasting away? Can you spend hours in front of a computer playing games without a single thought of food or drink? If that’s a yes, then Zombie Zone’s the place to be for all you maniac gamers out there! Needless to say, the best of the best have risen and fallen on this battleground. Games like <span class="event_name">FIFA, DotA, Counter Strike, Need For Speed, AOE</span> are a part of the competition with exciting goodies to compete for. So if you’re up for the challenge, come check it out! Registration on-site on 22, 23, 24 February 2013.
+
+                                <br /><br/><br/></p>
+                        </div>
+                </div>
+        </div>
+
+
+        <div class="unit item oneWide oneHigh events info" id="thread5">
+        <h4 class="infoHeader" style="background-image:url('images_bw/lit_thumb.jpg')">Literary</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">Literary Cafe</h1>
+                </div>
+                        <div class="column">
+                <span id="ZombieZone_image2"><img alt="literary" src="images/literary.jpg" /></span>
+                        </div>
+                        <div class="column-two last" >
+                                <h3 id="ZombieZone_header1">Literary Cafe</h3>
+                                <p id="ZombieZone_tagline1" class="tagline">Words are words</p>
+                                <p class="bottomSection" id="kalakshetra_content2">
+<h3>Parley(GD) Saturday</h3>
+<p>
+What did you feel when you saw Afzal's softer side? Do you really think it took a real shock for Indian feminists to rise? Did you feel like making your vote count when you saw Modi or Rahul speak? During your college days, did you ever feel like raising your voice on the polarized Indian education system? Here's your chance, as Felicity presents 'Parley', to speak up your thoughts and opinions.
+</p>
+
+<h3>Spin the yarn(Sunday)</h3>
+<p>Be ready to spin stories out of a few given hints and Set loose your untamed imagination and come up with spontaneous and hilarious twists to any plot given to you.</p>
+
+
+<h3>30 Second Window</h3>
+<p>Get your video recording gadgets, your camera, your IPad or even a phone, shoot an advertisement and sell us things ranging from a crumbled paper to the whole DLF building.
+Reach IIIT-H this saturday and show us If you can sell.
+
+Products to be sold will be revealed onsite.
+
+
+Registrations of all the events will be onsite.
+</p>
+                        </div>
+                </div>
+        </div>
+
+
+
+        <div class="unit item oneWide oneHigh events info" id="thread6">
+        <h4 class="infoHeader oneHigh" style="background-image:url('images_bw/paper_thumb.jpg')">Paper Presentation</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">Paper Presentation</h1>
+                </div>
+                        <div class="column">
+                <span id="paperppt_image"><img alt="literary" src="images/literary.jpg" /></span>
+                        </div>
+                        <div class="column-two last" >
+                                <h3 id="paperppt_header">Paper Presentation</h3>
+                                <p id="paperppt_tagline" class="tagline">Ideas, for the better</p>
+                                <p class="bottomSection" id="paperppt_content">
+ Felicity is not just about pomp and show – it is in fact a showcase of any talent that you might possess. While other events bring out your creative and smarter side, ‘Paper presentation’ will strike your scholarly nerves as many minds would meet together to present their ideas and advancements in technology. There are no bounds of the topics you choose to present. So if you think you have done something strikingly scholarly, come to Felicity and let the world know !!
+
+                                <br /><a href="http://feli.co/paper-ppt">feli.co/paperppt</a></p>
+                        </div>
+                </div>
+        </div>
+
+
+
+
+        <div class="unit item oneWide oneHigh events info" id="thread7">
+        <h4 class="infoHeader" style="background-image:url('images_bw/civil_thumb.jpg')">CIVIKA</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">Civika</h1>
+                </div>
+                        <div class="column">
+                <span id="civil_image"><img alt="literary" src="images/literary.jpg" /></span>
+                        </div>
+                        <div class="column-two last" >
+                                <h3 id="civil_header">Civika</h3>
+                                <p id="civil_tagline" class="tagline">Rome was not built in a day. So, what?</p>
+                                <p class="bottomSection" id="civil_content">
+This is the event for engineers to live up to their name by imagining and creating solutions for the real world.
+
+Creativity, innovation, and aesthetics are lauded in this event where pariticpants have to build a model for a given problem in 3 hours.
+
+An excellent opportunity to showcase your talent and even shape your imagination into reality.
+
+Participants are provided with material and a problem to let their imagination run, and their models are judged by strength and feasibility, as well as look and feel.
+
+The constraints in this competition are the time limit as well as the constraint on material provided, requiring unusual thinking and clever utilization of resources.
+                                </p>
+                                <span class="event_name" onclick="change_frame('civil','match')"> Matchitecture </span> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="event_name" onclick="change_frame('civil','bridge')"> Bridge the gap</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                </div>
+        </div>
+
+
+
+        <div class="unit item oneWide oneHigh events info" id="thread8">
+        <h4 class="infoHeader" id="futsal" style="background-image:url('images_bw/futsal_thumb.jpg')">Futsal </h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">Futsal</h1>
+                </div>
+                        <div class="column">
+                <span id="futsal_image"><img alt="futsal" src="images/futsal.jpg" /></span>
+                        </div>
+                        <div class="column-two last" >
+                                <h3 id="futsal_header">Futsal</h3>
+                                <p id="futsal_tagline" class="tagline"></p>
+                                <p class="bottomSection" id="futsal_content">
+
+Easily the most popular sports event in Felicity, this spin on football is action-packed and an entirely new experience. It is a three day mega event for footballs lovers everywhere giving them a chance to prove their mettle in the toughest event yet.
+<br /> Register at <a href="http://feli.co/futsal">feli.co/futsal </a>
+                                <br /><br/><br/></p>
+                        </div>
+                </div>
+        </div>
+
+
+
+
+        <div class="unit item oneWide oneHigh events info" id="thread9">
+        <h4 class="infoHeader" style="background-image:url('images_bw/advt_thumb.jpg')">Adventure</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1 class="center">Adventure Sports</h1>
+                </div>
+                <span id="ZombieZone_image3"><img alt="advt" src="images/advt.jpg" /></span>
+
+
+                                <br />
+                                <br />
+                                <br />
+Felicity will be hosting Skateboarding Workshop and rappelling. We aim at getting you all geared up for those height with rapelling and slam some of those floors with your skateboard skills. Organized in association with GHAC. Registration onsite, 22, 23, 24 February.
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+
+                </div>
+        </div>
+
+
+<!-- EVENTS END -->
+
+	<div class="unit item oneWide oneHigh info about" id="felicity">
+		<h4 class="infoHeader" style="background-image:url('images/fel_thumb.jpg')">Felicity</h4>
+		<div class="content cf">
+			<div class="column-three last">
+			<h1>What's Felicity?</h1>
+			<p class="tagline">22,23,24 February'13.</p>
+			</div>
+			<div class="column-three">
+                        <img alt="rangoli" src="images/fel_rangoli.jpg"/>
+				<p> International Institute of Information Technology, Hyderabad is delighted to announce the 12th edition of our annual techno-cultural fest, "Felicity 2013" to be held in February, 22nd-24th.
+This year we hope to awaken the inner child through a language truly remarkable in its simplicity, which is easy to understand and knows no bounds in expression, a universal language with fans in every age-group. This language - “Animatia” - will be used to create a pseudo-reality where people can enjoy three days of unadulterated fun and freedom. </p>
+			</div>
+			<div class="column last">
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="unit item oneWide oneHigh info about" id="contact">
+		<h4 class="infoHeader" style="background-image:url('images/contact_thumb.jpg')">Contact</h4>
+		<div class="content cf">
+			<div class="column-three last">
+			<h1>Contact us</h1>
+			<p class="tagline">We'll be glad to hear from you.</p>
+			</div>
+			<div class="column-two">
+                                <ul>
+                                    <li> Prasanth Garapati : +91 93 97 97 97 49 </li>
+                                    <li> Nishith Maheshwari : +91 77 99 08 77 31 </li>
+                                    <li> SP Mohanty : +91 81 42 09 26 36 </li>
+                                </ul>
+                                <p>
+                                     Official Channel : felicity [at] students [dot] iiit [dot] ac [dot] in
+                                </p>
+
+
+
+			</div>
+			<div class="column last">
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="unit item oneWide oneHigh  nights isotope-item" id="nights_inaugral">
+                <img alt="ankita" class="backdrop" src="images/ankita.jpg"  />
+		<h4 class="infoHeader"  >Inaugrals</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt="inaug" src="images/inaug.jpg" />
+A show of college talent in the opening night of the fest to kick off the 3-day celebrations. A must-watch for everyone who attends Felicity.
+<br /><br /> Date: 22 February 2013.
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+<!-- Sponsors -->
+<!--unit item oneWide oneHigh  nights isotope-item
+
+unit item oneWide oneHigh events info
+ -->
+
+        <div class="unit item oneWide oneHigh sponsors about info isotope-item" >
+        <h4 class="infoHeader">Sponsors</h4>
+                <div class="content cf" style="padding-left:40px;width:720px;">
+                <div class="column-three last">
+                <h1>Sponsors 2013</h1>
+                <p class="tagline" >We value our sponsors as much as we value our fest.</p>
+<br /><br />
+<ul id="SPONSORS">
+<li class='spons'>Threads  &nbsp;&nbsp; Title &nbsp;&nbsp;  Sponsor</li>
+<li>
+<a href="http://www.microsoft.com/en-in/default.aspx"><img alt="microsoft" height="80px" src="images/sponsors/Microsoft.png"/></a>
+<br/>
+<br/>
+<br/>
+</li>
+<li class='spons'>Pulsation &nbsp;&nbsp; Title &nbsp;&nbsp;  Sponsor</li>
+<li>
+<a href="http://www.qualcomm.co.in/"><img alt="qualcomm" src="images/sponsors/Qualcomm.PNG"/></a>
+<br/>
+<br/>
+<br/>
+</li>
+<!--<li>
+<li class='spons'>Threads Associate Sponsor </li>
+<img src="images/sponsors/CA.png" />
+<br/>
+</li>-->
+<li class='spons'>Rock&nbsp;&nbsp; Night&nbsp;&nbsp; Sponsor</li>
+<li>
+<a href="http://www.sbhyd.com/"><img alt="sbh" width="200px" src="../Misc/sponsors/images/c_sbh.jpg"/></a>
+<br/>
+<br/>
+<br/>
+</li>
+<li class='spons'>Civika&nbsp;&nbsp; Title&nbsp;&nbsp; Sponsor</li>
+<li>
+<a href="http://www.ivrcl.com/"><img alt='image' src="images/sponsors/IVRCL_Master_Logo_High_-_5_mb2.jpg" height="100px"/></a>
+<br/>
+<br/>
+<br/>
+</li>
+<li class='spons'>Literary Sponsor</li>
+<li>
+<img alt='image' src="../Misc/sponsors/images/e_active.jpg" width="150"/>
+</li>
+<li class='spons'>Threads(EVENT)&nbsp;&nbsp; Sponsors</li>
+<li>
+<a href="http://www.progress.com/en/index.html"><img alt='image' src="../Misc/sponsors/images/f_progress.jpg" width="150"/></a>
+<a href="https://www.capitaliq.com/home.aspx"><img alt='image' src="../Misc/sponsors/images/g_capitaliq.jpg" width="150"/></a>
+<a href="http://www.ibm.com/in/en/"><img alt='image' src="../Misc/sponsors/images/h_ibm.jpg" width="150"/></a>
+</li>
+<li class='spons'>Event&nbsp;&nbsp; Banking&nbsp;&nbsp; Partner</li>
+<li>
+<img alt='image' src="../Misc/sponsors/images/w_ab.jpg" width="150"/>
+</li>
+<li class='spons'>Food&nbsp;&nbsp; Partner</li>
+<li>
+<a href="http://www.countryoven.in/"><img alt='image' src="../Misc/sponsors/images/k_countryoven.jpg" width="150"/></a>
+<h4>dessert partner</h4>
+<img alt='image' src="../Misc/sponsors/images/l_hazzel.jpg" width="150"/>
+</li>
+<li class='spons'>Adventure Partner</li>
+<li>
+<img alt='image' src="../../web2py/Portal/default/download/events.sponsor_img.92de413287824ba4.7175696b73696c7665722d6c6f676f2e6a7067.jpg.html" width="150">
+<img alt='image' src="../Misc/sponsors/images/u_ghac.jpg" width="150"/>
+
+</li>
+<li class='spons'>Hospitality&nbsp;&nbsp; Partner</li>
+<li>
+<img src="images/sponsors/aditya.jpg" width="150" alt="aditya.jpg">
+</li>
+<li class='spons'>Social&nbsp;&nbsp; Initative&nbsp;&nbsp; Partner</li>
+<li>
+<a href="http://makeadiff.in/"><img alt='image' src="../Misc/sponsors/images/m_mad.jpg" width="150"/></a>
+</li>
+<li class='spons'>Online&nbsp;&nbsp; Recharge&nbsp;&nbsp; Partner</li>
+<li>
+<img alt='image' src="../Misc/sponsors/images/n_freecharge.jpg" width="150"/>
+</li>
+
+<li class='spons'>Media&nbsp;&nbsp; Partners</li>
+<li>
+<img alt='image' src="../Misc/sponsors/images/p_ennadu.jpg" width="150"/>
+<img alt='image' src="../Misc/sponsors/images/q_ETV.jpg" width="150"/>
+<img alt='image' src="../Misc/sponsors/images/s_jam.jpg" width="150"/>
+</li>
+<li class='spons'>EVENT SPONSORS</li>
+<li>
+<img alt='image' src="../Misc/sponsors/images/v_servo.jpg" width="150"/>
+</li>
+<li class='spons'>Online Promotion&nbsp;&nbsp; Partners</li>
+<li>
+<img alt='image' src="images/sponsors/Tagmuse.jpg" width="150"/>
+</li>
+<li class='spons'>T Shirt&nbsp;&nbsp; Partner</li>
+<li>
+<img alt='image' src="images/sponsors/estyle.jpg" width="150"/>
+</li>
+</ul>
+
+
+<br /><br />
+                To sponsor Felicity contact us asap!<br />
+                felicity [at] students [dot] iiit [dot] ac [dot] in
+                </div></div>
+        </div>
+
+        <div class="unit item oneWide oneHigh sponsors info about" id="typography">
+        <h4 class="infoHeader">Prev-Sponsors</h4>
+                <div class="content cf">
+                <div class="column-three last">
+                <h1>Past Sponsors</h1>
+                <p class="tagline">We value our sponsors as much as we value our fest.</p>
+                <div class="sponsor"><img alt='image' class="sponsor" src="images/ps.jpg"/></div>
+<br /><br />
+                </div></div>
+        </div>
+
+
+<!-- End Spons -->
+
+
+
+
+	<div class="unit item oneWide oneHigh  nights isotope-item" id="nights_inaugral1">
+                <img alt='image' class="backdrop" src="images/pro_thumb.jpg"  />
+		<h4 class="infoHeader"  >Rock Night</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt='image' src="images/rock.jpg" />
+
+                                </p>
+                                <p>
+A last day event to end on a high note. Be there and experience music in the form it should be in.
+<br /> Visiting band : Scribe Core. Visit Schedule tab for more.<br />
+<br /><br /> Date : 23 February 2013
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="unit item oneWide oneHigh  illustration isotope-item" id="nights_rock">
+                <img alt='image' class="backdrop" src="images/detailed.jpg"  />
+		<h4 class="infoHeader"  >Detailed Schedule</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+<br /><br /><br /><br />
+<a href="http://10.4.3.65/13/Misc/images/pass_new_back.jpg" target="_blank"> Click here for a detailed schedule </a>
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="unit item oneWide oneHigh  nights isotope-item" id="nights_rock1">
+                <img alt='image' class="backdrop" src="images/comedy_thumb.jpg"  />
+		<h4 class="infoHeader"  >Hasya Kavi</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt='image' src="images/comedy.jpg" />
+Humour is always a great crowd-puller—and the most popular form of pulling out those laughs is live stand-up comedy. One of the best fest nights attended by one and all for an evening of mirth.
+<br />
+Visiting Comedian : Nitin Gupta (A.k.a Rivaldo) Visit "schedule" tab for more details. <br/>
+Date : 23 February 2013
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="unit item oneWide oneHigh  nights isotope-item" id="nights_rock2">
+                <img alt='image' class="backdrop" src="images/rock_thumb.jpg"  />
+		<h4 class="infoHeader"  >Pro Night</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt='image' src="images/pro.jpg" />
+The biggest crowd-puller, where famous bands bring with them a night of rock,revelry and rage. Listeners lose themselves in the mind-blowing music which can compete with concerts anywhere.
+<br /> Visiting Band : Paradigm Shift. Visit "schedule" tab for more details. <br /> Date : 24 February 2013
+
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="unit item oneWide oneHigh  nights isotope-item" id="nights_rock3">
+                <img alt='image' class="backdrop" src="images/mnm_thumb.jpg"  />
+		<h4 class="infoHeader"  >Talent Showcase</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt='image' src="images/mnm.jpg" />
+ Talent showcase is one of the most eagerly awaited and excitable event where the bar for talent is higher than ever before. Scores of boys and girls will be ready to go all out to get these coveted titles.
+<br />  <br /> Date : 24 February 2013
+
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<div class="unit item oneWide oneHigh illustration isotope-item" id="talk1">
+                <img alt='image' class="backdrop" src="http://egov.eletsonline.com/wp-content/uploads/2012/12/Sanjay-Jaju.jpg"  />
+		<h4 class="infoHeader"  >Sanjay Jaju</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt='image' src="images/Sanjay-Jaju.jpg" />
+<br />
+<h1> Sanjay Jaju </h1>
+<p>Sanjay Jaju, IAS, Secretary-Information Technology and Communications Department. Government of Andhra Pradesh</p>
+
+<br /><br /> <p>Date: 22 February 2013, Inaugral Talk.
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<div class="unit item oneWide oneHigh illustration isotope-item" id="talk2">
+                <img alt='image' class="backdrop" src="images/jp-loksatta.jpg"  />
+		<h4 class="infoHeader"  >Jayaprakash Narayan</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt='image' src="images/jp.jpg" />
+<br />
+Nagabhairava Jayaprakash Narayan, known as JP, is an Indian politician, political reformer and columnist. He is the founder and the President of Lok Satta Party, and currently a Member of the Legislative Assembly from Kukatpally constituency in Andhra Pradesh in south-east India. He is also a former Indian public administrator. He is well known for his role in bringing electoral reforms and the Right to Information (RTI) act.
+<br />
+Second day talk
+
+<br /><br /> Date: 23 February 2013, 10 a.m
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="unit item oneWide oneHigh illustration isotope-item" id="talk3">
+                <img alt='image' class="backdrop" src="images/mki.jpeg"  />
+		<h4 class="infoHeader"  >Mohan Krishna Indraganti</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt='image' src="images/mki2.jpg" />
+<br />
+This is an interactive session with  Hari Mohan Paruvu and  Mohan Krishna Indraganti (In picture). <br />
+MK Indraganti is a qualified Telugu film director, and Hari Mohan Paruvu a distinguished author.
+
+<br /><br /> Date: 24 February 2013, 10 a.m
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<div class="unit item oneWide oneHigh illustration isotope-item" id="talk4">
+                <img alt='image' class="backdrop" src="images/scribe_icon.jpg"  />
+		<h4 class="infoHeader"  >Scribe</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt='image' src="images/scribe.jpg" />
+<br />
+
+<br /><br /> Date: 23 February 2013, 7p.m
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="unit item oneWide oneHigh illustration isotope-item" id="talk5">
+                <img alt='image' class="backdrop" src="images/paradigm_icon.jpg"  />
+		<h4 class="infoHeader"  >Paradigm Shift</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+ <img alt='image' src="http://10.4.3.65/13/main/images/sc.jpg" />
+<br />
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Il6HKtFatpA" frameborder="0" allowfullscreen></iframe>
+Rock band performing on
+<br /><br /> Date: 24 February 2013, 7p.m
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+	<div class="unit item oneWide oneHigh illustration isotope-item" id="talk6">
+                <img alt='image' class="backdrop" src="images/comedy_thumb.jpg"  />
+		<h4 class="infoHeader"  >Nitin Gupta</h4>
+
+		<div class="content cf">
+			<div class="column-three last">
+			</div>
+			<div class="column-two">
+                        <br /><br/><br />
+				<p>
+<br />
+Nitin Gupta (a.k.a Rivaldo)
+<iframe width="560" height="315" src="http://www.youtube.com/embed/HIudxeqFuz8" frameborder="0" allowfullscreen></iframe>
+<br /><br /> Date: 22 February 2013, 7p.m
+                                </p>
+                                <p>
+                                </p>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+	<script type="text/javascript" src="js/jquery.tubeplayer.min.js"></script>
+	<script type="text/javascript" src="js/bigfat.js"></script>
+	<script type="text/javascript" src="js/switcher.js"></script>
+
+
+
+
+
+<div class="hidden">
+<span class="bottomSection hidden" id="codecraft_content"> CodeCraft is an online algorithmic programming contest on the lines of ACM ICPC. The questions are set by Microsoft, ACM ICPC World Finalists and other qualified programmers from IIIT-Hyderabad.
+This is one of the biggest and most challenging events at Felicity.<a href="http://feli.co/cc">feli.co/cc</a>   </span>
+                                <span class="hidden" id="codecraft_header"> Code Craft </span>
+                                <span class="hidden" id="codecraft_tagline"> Code Craft </span>
+                                <span class="hidden" id="codecraft_image"> <img alt='image' src="images/codecraft.jpg" /> </span>
+                                <span class="event_name"> Optimust </span>
+                                <span class="bottomSection" id="tle_content"> Optimust, formerly Time-Limit-Exceeded (TLE) is a fast paced programming contest, with a variety of constraints. To win you need to be fast and optimum! <a href="http://feli.co/opt" id="tle_content1">feli.co/opt</a>   </span>
+                                <span class="hidden" id="tle_header"> Optimust </span>
+                                <span class="hidden" id="tle_tagline"> Previously TLE </span>
+                                <span class="hidden" id="tle_image"> <img alt='image' src="images/tle.jpg" /> </span>
+
+                                <span class="event_name"> Gordian-Knot </span>
+                                <span class="bottomSection" id="gordian_content"> An online mathematics based competition. <a href="http://feli.co/math" id="gordian_content1">feli.co/math</a>   </span>
+                                <span class="hidden" id="gordian_header"> Gordian Knot </span>
+                                <span class="hidden" id="gordian_tagline"> An online mathematics based competition.</span>
+                                <span class="hidden" id="gordian_image"> <img alt='image' src="images/gordian.jpg" /> </span>
+
+                                <span class="event_name"> Cache-In </span>
+                                <span class="bottomSection hidden" id="cachein_content">Cache in is an exciting fun filled sequence of questions, ranging from general knowledge to presence of mind. Use your knowledge, be on the look out and win some easy prizes!
+But, beware, the route is not so easy after-all!   <a href="http://feli.co/cache-in">feli.co/cache-in</a>   </span>
+                                <span class="hidden" id="cachein_header"> Cache-In</span>
+                                <span class="hidden" id="cachein_tagline"> Beat That!</span>
+                                <span class="hidden" id="cachein_image"> <img alt='image' src="images/cachein.jpg" /> </span>
+
+
+
+                                <span class="event_name"> Search Engine Optimization </span>
+                                <span class="bottomSection hidden" id="seo_content">
+SEO is all about getting your web pages ranked high in search engines. Ever wondered, how does a search engine rank pages in search results? It turns out, ranking can be enhanced using Search Engine Optimization
+                                <a href="http://feli.co/seo">feli.co/seo</a>   </span>
+                                <span class="hidden" id="seo_header"> Seo</span>
+                                <span class="hidden" id="seo_tagline"> Search Engine Optimization</span>
+                                <span class="hidden" id="seo_image"> <img alt='image' src="images/seo.jpg" /> </span>
+
+
+                                <span class="event_name"> AI Challenge </span>
+                                <span class="bottomSection hidden" id="aichallenge_content">
+                                An online programming competition that expects participants to write artificially intelligent code.
+                                <a href="http://feli.co/aichallenge">feli.co/aichallenge</a>   </span>
+                                <span class="hidden" id="aichallenge_header"> AI Challenge</span>
+                                <span class="hidden" id="aichallenge_tagline"> Beat the machine</span>
+                                <span class="hidden" id="aichallenge_image"> <img alt='image' src="images/aichallenge.jpg" /> </span>
+
+
+                                <span class="event_name"> Hack-in </span>
+                                <span class="bottomSection hidden" id="breakin_content">
+                                An online hacking competition that focuses on taming existing technology to achieve certain tasks.
+                                <a href="http://feli.co/breakin">feli.co/breakin</a>   </span>
+                                <span class="hidden" id="breakin_header"> Hack-in</span>
+                                <span class="hidden" id="breakin_tagline"> Break in if you can</span>
+                                <span class="hidden" id="breakin_image"> <img alt='image' src="images/breakin.jpg" /> </span>
+
+
+                                <span class="event_name"> Debug-the-Cbug </span>
+                                <span class="bottomSection hidden" id="dbug_content">
+An onsite event to find bugs in programs. <br /><br />
+                                <a href="http://feli.co/dbug">feli.co/dbug</a>   </span>
+                                <span class="hidden" id="dbug_header"> Debug the C-bug</span>
+                                <span class="hidden" id="dbug_tagline"> Programming on Paper</span>
+                                <span class="hidden" id="dbug_image"> <img alt='image' src="images/dbug.jpg" /> </span>
+
+
+
+                                <span class="event_name"> µC Workshop </span>
+                                <span class="bottomSection hidden" id="uc_content">
+                                  It is a Pre- fest workshop aimed at teaching enthusiasts latest trends in embedded programming over the course of three days.<br /><br />
+                                <a href="http://feli.co/uc">feli.co/uc</a>   </span>
+                                <span class="hidden" id="uc_header">  µC Workshop</span>
+                                <span class="hidden" id="uc_tagline"> </span>
+                                <span class="hidden" id="uc_image"> <img alt='image' src="images/uc.jpg" /> </span>
+
+
+
+
+                                <span class="event_name"> RoboSoccer</span>
+                                <span class="bottomSection hidden" id="rs_content">
+Tingling through the nerves, this is an apt test for your skills with robots and their dominance in the field of soccer.
+Score as many goals as you can and prove your worth with the robotic domination.
+                                <a href="http://feli.co/rs">feli.co/rs</a>   </span>
+                                <span class="hidden" id="rs_header">  RoboSoccer</span>
+                                <span class="hidden" id="rs_tagline">  Pulse of the electronics events</span>
+                                <span class="hidden" id="rs_image"> <img alt='image' src="images/rs.jpg" /> </span>
+
+
+
+
+                                <span class="event_name">Embedded Showcase </span>
+                                <span class="bottomSection hidden" id="es_content">
+It is an electronic design contest.
+The participants are required to design and develop embedded systems which create an impact.
+Embedded Showcase tests the optimization skills and innovation of the designer.
+                                <a href="http://feli.co/embed">feli.co/embed</a>   </span>
+                                <span class="hidden" id="es_header">  Embedded Showcase</span>
+                                <span class="hidden" id="es_tagline">  Out of the box solutions to complex problems</span>
+                                <span class="hidden" id="es_image"> <img alt='image' src="images/rs.jpg" /> </span>
+
+
+
+
+
+                                <span class="event_name">Code-da-ckt </span>
+                                <span class="bottomSection hidden" id="cdc_content">
+Code the circuit  is an event to find a software solution to a hardware problem.
+The event tests the critical understanding of the real world hardware issues.
+                                <a href="http://feli.co/cdc">feli.co/cdc</a>   </span>
+                                <span class="hidden" id="cdc_header">  Code-da-Ckt</span>
+                                <span class="hidden" id="cdc_tagline">  Out of the box solutions to complex problems</span>
+                                <span class="hidden" id="cdc_image"> <img alt='image' src="images/cdc.jpg" /> </span>
+
+
+                                <span class="event_name"> </span>
+                                <span class="bottomSection hidden" id="me_content">
+Better known as M-E.  It is an online event which has a mix of electronics and Mystery solving.
+Tests a person’s knowledge in various fields of electronics and communication and his sharp instincts.
+                                <a href="http://feli.co/mystre">feli.co/mystre</a>   </span>
+                                <span class="hidden" id="me_header">  Mystr-E</span>
+                                <span class="hidden" id="me_tagline">  Hone your ability in the puzzling electronic world</span>
+                                <span class="hidden" id="me_image"> <img alt='image' src="images/me.jpg" /> </span>
+
+                                <span class="event_name"> </span>
+                                <span class="bottomSection hidden" id="mc_content">
+The participants will be provided a maze and the aim is to reach the end and report the shortest path!
+
+                                For problem statements : <a href="http://feli.co/maze">feli.co/maze</a>   </span>
+                                <span class="hidden" id="mc_header">  Maze Challenge</span>
+                                <span class="hidden" id="mc_tagline">  I can't solve a maze, can your bot?</span>
+                                <span class="hidden" id="mc_image"> <img alt='image' src="images/mc.jpg" /> </span>
+
+                                <span class="event_name">King of Breadboards</span>
+                                <span class="bottomSection hidden" id="kob_content">
+These are  on-site events for designing  circuits that are both lucid and worth a shot in the design labs.
+Felicity provides a platform for circuit designers to test their designing speed and build prototype models.
+                                <a href="http://feli.co/kob">feli.co/kob</a>   </span>
+                                <span class="hidden" id="kob_header">  King of Breadboards</span>
+                                <span class="hidden" id="kob_tagline">  With state of the art breadboards.</span>
+                                <span class="hidden" id="kob_image"> <img alt='image' src="images/kob.jpg" /> </span>
+
+                                <span class="event_name">Robo-Rally Race</span>
+                                <span class="bottomSection hidden" id="rrr_content">
+The event goes very much by its name. The event adds spice to the 3 momentous days Felicity.
+The participants are supposed to make and bring robots that have to cross a series of flags. <br /><br />
+                                <a href="http://feli.co/rrr">feli.co/rrr</a>   </span>
+                                <span class="hidden" id="rrr_header">  Robo Rally Race</span>
+                                <span class="hidden" id="rrr_tagline">  </span>
+                                <span class="hidden" id="rrr_image"> <img alt='image' src="images/rrr.jpg" /> </span>
+
+
+
+
+
+
+
+                                <span class="event_name">E-Quiz </span>
+                                <span class="bottomSection hidden" id="eq_content">
+It is an on site event for electronic geeks to  prove their mettle.
+A chance to get trapped and wander in the exotic circuit world of transistors and diodes.
+The perfect stage for a person to showcase his intelligence seconded by reason.
+                                <a href=" http://feli.co/equiz "> http://feli.co/equiz</a>   </span>
+                                <span class="hidden" id="eq_header">  E-Quiz</span>
+                                <span class="hidden" id="eq_tagline">  Electronics Quiz</span>
+                                <span class="hidden" id="eq_image"> <img alt='image' src="images/eq.jpg" /> </span>
+
+
+
+                                <span class="event_name"> Paper Dressing </span>
+                                <span class="bottomSection hidden" id="pd_content">
+
+Playing dress up was indeed lots of fun in one’s youth. This event let’s you relive that phase of your childhood yet again by designing the most atrocious costumes made solely out of newspapers. <br /><br />
+                                <br />   </span>
+                                <span class="hidden" id="pd_header">  Paper Dressing</span>
+                                <span class="hidden" id="pd_tagline">  Newspapers are not that boring, afterall.</span>
+                                <span class="hidden" id="pd_image"> <img alt='image' src="images/inaugral.jpg" /> </span>
+
+
+                                <span class="event_name"> Graffiti </span>
+                                <span class="bottomSection hidden" id="graffiti_content">
+Artists are those who usually feel that lack of space and the boundaries of a canvas severely restricts their free flowing ideas and wild creative fantasies. With this event, there’s absolutely NO limitation. <br /><br />
+                                <br />   </span>
+                                <span class="hidden" id="graffiti_header">  Graffiti</span>
+                                <span class="hidden" id="graffiti_tagline">  Yes, it is legal here.</span>
+                                <span class="hidden" id="graffiti_image"> <img alt='image' src="images/graffiti.JPG" /> </span>
+
+
+                                <span class="event_name"> Facade </span>
+                                <span class="bottomSection hidden" id="facade_content">
+This competition of masks lets a face do the talking for once—with colors and expressions only paint can bring!<br /><br />
+                                <br />   </span>
+                                <span class="hidden" id="facade_header">  Facade</span>
+                                <span class="hidden" id="facade_tagline">  Ugly is nobody</span>
+                                <span class="hidden" id="facade_image"> <img alt='image' src="images/face.jpg" /> </span>
+
+
+
+
+                                <span class="event_name"> Rangoli </span>
+                                <span class="bottomSection hidden" id="rangoli_content">
+Artisitic flairs are exploited to it’s maximum potential and the result is the most exotic, creative and mesmerizing rangoli’s that blow the judge’s minds away.
+                                <br />   </span>
+                                <span class="hidden" id="rangoli_header">  Rangoli</span>
+                                <span class="hidden" id="rangoli_tagline">  Designs and beyond</span>
+                                <span class="hidden" id="rangoli_image"> <img alt='image' src="images/rangoli.jpg" /> </span>
+
+
+
+                                <span class="event_name"> Riders of the storm </span>
+                                <span class="bottomSection hidden" id="rots_content">
+If Rock is the foundation of someone’s life and all the priorities in the world are forgotten in an instant when Rock music is played, then this event serves as a major attraction which can hypnotise just about any music fanatic.<br /><br/> Registrations Started !! <a href="http://feli.co/riders">Click Here to Register</a>
+                                <br />   </span>
+                                <span class="hidden" id="rots_header">  Riders of the storm</span>
+                                <span class="hidden" id="rots_tagline">  </span>
+                                <span class="hidden" id="rots_image"> <img alt='image' src="images/riders.png" /> </span>
+
+
+
+                                <span class="event_name"> Stomp the yard </span>
+                                <span class="bottomSection hidden" id="stomp_content">
+When an individual’s feet moves in time with the beat, body sways in coordination with the rhythm and head bobs in tempo, they put on their dancing shoes and waltz their way onto the dance floor for this exciting event. <br /><br />Registrations Started !!  <a href="http://feli.co/stomp">Click Here to Register</a>
+                                <br />   </span>
+                                <span class="hidden" id="stomp_header">  Stomp the yard</span>
+                                <span class="hidden" id="stomp_tagline">  </span>
+                                <span class="hidden" id="stomp_image"> <img alt='image' src="images/inaugral.jpg" /> </span>
+
+
+
+                                <span class="event_name"> Antakshari </span>
+                                <span class="bottomSection hidden" id="antakshari_content">
+For people whose lives revolve around Indian music and can come up with a song for any situation or mood in an instant, THIS is the event to be a part of! Event will be on 22, 23, 24 of February on-campus. <br /><br/>
+                                <br />   </span>
+                                <span class="hidden" id="antakshari_header">  Antakshari </span>
+                                <span class="hidden" id="antakshari_tagline">  </span>
+                                <span class="hidden" id="antakshari_image"> <img alt='image' src="images/inaugral.jpg" /> </span>
+
+
+
+                                <span class="event_name"> Euphonica </span>
+                                <span class="bottomSection hidden" id="euphonica_content">
+There are people who have music imbibed in their every breath, thought and actions. We in IIIT believe that you are indeed one of those rare few blessed musicians who deserve to participate in this event. <br /><br /> Registration on-site (22, 23, 24 February)
+                                <br />   </span>
+                                <span class="hidden" id="euphonica_header">  Euphonica </span>
+                                <span class="hidden" id="euphonica_tagline">  </span>
+                                <span class="hidden" id="euphonica_image"> <img alt='image' src="images/inaugral.jpg" /> </span>
+
+
+
+                                <span class="event_name"> Matchitecture</span>
+                                <span class="bottomSection hidden" id="match_content" style="display:none">
+This fun and creative event involves building your dream house- with a twist. Participants can only use matchboxes.. and no adhesive!
+In one hour, you can relive your childhood of building sandcastles using matchsticks and boxes instead.
+Participants are provided with 50-60 matchboxes and nothing else to create an eclectic structure of their own imagination.
+Creations are judged based on the length, creativity and stability of the structure. Out of the box thinking is always appreciated.
+                                <br />   </span>
+                                <span class="hidden" id="match_header">  Matchitecture </span>
+                                <span class="hidden" id="match_tagline">  </span>
+                                <span class="hidden" id="match_image"> <img alt='image' src="http://10.4.3.65/13/main/images/match.jpg" /> </span>
+
+
+
+                                <span class="event_name"> Bridge the Gap</span>
+                                <span class="bottomSection hidden" id="bridge_content" style="display:none"> </span>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37802910-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Piwik -->
+<!--
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://felicity.iiit.ac.in/piwik/" : "http://felicity.iiit.ac.in/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img alt='image' src="http://felicity.iiit.ac.in/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+-->
+<!-- End Piwik Tracking Code -->
+
+
+
+
+</body>
+</html>
