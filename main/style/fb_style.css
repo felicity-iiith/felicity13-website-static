@@ -68,7 +68,7 @@ http://github.com/necolas/css3-facebook-buttons
     width: 10px; 
     height: 12px; 
     margin: 0 0.5em 0 0; 
-    background: url(http://10.4.3.65/13/main/style/fb-icons.png) 99px 99px no-repeat;
+    background: url(/13/main/style/fb-icons.png) 99px 99px no-repeat;
 }
 
 .uibutton.edit:before  { background-position: 0 0; }
